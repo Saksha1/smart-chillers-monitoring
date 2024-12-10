@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web SCADA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="menu-icon">&#9776;</div>
+    <div class="title">Web SCADA</div>
+    <div class="status">
+      <span>5G+</span>
+      <span>82%</span>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="side-menu">
+      <div class="profile">
+        <div class="avatar"></div>
+        <div class="info">
+          <p>APKS</p>
+          <p>Engineer</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>Device</li>
+          <li>Monitoring Points</li>
+          <li>Map</li>
+          <li>Web SCADA</li>
+          <li>Message</li>
+          <li>Account Management</li>
+          <li>Account Information</li>
+          <li>Settings</li>
+          <li>Logout</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="section">
+        <h3>Device List</h3>
+        <div class="device">
+          <p>30TR APKS AC TR</p>
+          <p>ID: XT106358000002002212020W0007008</p>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Web SCADA</h3>
+        <div class="no-data">
+          <p>No Data</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>30TR APKS AC TR</h1>
+  </header>
+
+  <section id="device-info">
+    <h2>Device Information</h2>
+    <ul>
+      <li><strong>Device Name:</strong> 30TR APKS AC TR</li>
+      <li><strong>State:</strong> Online</li>
+      <li><strong>Machine Code:</strong> U37035221202228W0007d3d7b152c3a4</li>
+      <li><strong>Product Code:</strong> XT106358000002002212020W0007008</li>
+      <li><strong>Model:</strong> PI3070ig</li>
+      <li><strong>Firmware Version:</strong></li>
+      <ul>
+        <li>HMIApp: R06R005_V2.0.194_D20220928</li>
+        <li>Update: R06R005_V2.0.151_D20220928</li>
+        <li>FS: R06R005_V2.0.47_D20220913</li>
+      </ul>
+    </ul>
+  </section>
+
+  <section id="temperature">
+    <h2>Temperature Settings</h2>
+    <p><strong>Tank Temperature:</strong> 15.3 °C</p>
+    <p><strong>Set Point:</strong> 15.0 °C</p>
+    <p><strong>Status:</strong> Chiller ON</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <button>User Level</button>
+    <button>Factory Level</button>
+    <button>Status Level</button>
+  </section>
+
+  <footer>
+    <nav>
+      <button>Home</button>
+      <button>Alarm</button>
+      <button>Data</button>
+    </nav>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ALARM LOG</h1>
+        <table class="alarm-log">
+            <thead>
+                <tr>
+                    <th>Occurrence Time</th>
+                    <th>ID</th>
+                    <th>CurrentValue</th>
+                    <th>AlarmText</th>
+                    <th>ResetTime</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+        <div class="buttons">
+            <button class="back">BACK</button>
+            <button class="home">HOME</button>
+            <button class="menu">MENU</button>
+            <button class="next">NEXT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DATA LOG</h1>
+        <table class="data-log">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Tank Temperature</th>
+                    <th>COMP1</th>
+                    <th>COMP2</th>
+                    <th>FAN</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+        <div class="buttons">
+            <button class="home">HOME</button>
+            <button class="export">EXPORT</button>
+            <button class="menu">MENU</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
